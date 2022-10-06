@@ -1,13 +1,12 @@
 import React from "react";
-
+//props.childrenはタグで囲った中身を表示
 const ColorfulMessage=(props)=>{
-    console.log(props);
     const contentStyle={
-    color:'blue',
+    color:props.color,
     fontSize:'18px'
 };
     return(
-        <p style={contentStyle}>hey guys</p>
+        <p style={contentStyle}>{props.children}</p>
     );
 }
 
